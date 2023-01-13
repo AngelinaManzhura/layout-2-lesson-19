@@ -1,0 +1,312 @@
+.header {
+    width: 100%;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 345px;
+        margin: 0 auto;
+    }
+}
+
+.header-add-info {
+    background-color: $color-primary;
+
+    &-content {
+        height: 55px;
+        color: $color-primary-light;
+    }
+}
+
+.contact-information {
+    display: flex;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        &-text {
+            display: none;
+            margin-left: 10px;
+        }
+    }
+}
+
+.language {
+    display: flex;
+    align-items: center;
+
+    &-text {
+        margin-right: 5px;
+    }
+}
+
+// вторая часть
+.header-main-info {
+    background-color: $color-primary-light;
+
+    &-content {
+        height: 70px;
+        color: $color-primary-dark;
+    }
+}
+
+.header-information-plants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        display: none;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+   
+    &-img {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+.header-information-plants-button {
+    display: flex;
+    align-items: center;
+
+    p {
+        display: none;
+    }
+
+    &-phone {
+        width: 40px;
+        height: 34px;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-accent;
+
+        img {
+            width: 20px;
+            height: 18px;
+        }
+    }
+
+    &-burger {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        padding: 0;
+        border: none;
+        background-color: $color-primary-light;
+      
+    }
+}
+//
+@media (min-width: 375px) {
+    .header {
+        &-content {
+            max-width: 707px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &-container {
+            padding: 0 20px;
+        }
+
+        &-content {
+            max-width: 904px;
+        }
+    }
+
+    .contact-information-item-text {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: $color-primary-light;
+        
+    }
+
+    .language {
+        &-text {
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .header-information-plants { 
+        width: 100%;
+        max-width: 688px;
+    }
+
+    .header-information-plants-nav {
+        display: flex;
+        width: 100%;
+        max-width: 538px;
+        margin-right: 20px;
+
+        &-list {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+            
+            li:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            a:hover {
+                color: $color-accent;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            margin-right: 5px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: $color-primary-dark;
+           
+        }
+    }
+
+    .header-information-plants-button {
+    
+        &-burger {
+            display: none;
+        }
+
+        &-phone {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            height: 40px;
+            color: $color-primary-light;
+            
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            
+            p {
+                display: block;
+                font-family: 'Nunito', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+              }
+        }
+    }
+}
+// laptop
+@media (min-width: 1024px) {
+    .header {
+        &-container {
+            padding: 0 60px;
+        }
+
+        &-content {
+            max-width: 1052px;
+        }
+    }
+
+    .header-information-plants {
+        max-width: 788px;
+    }
+
+    .header-information-plants-nav {
+        max-width: 638px;
+        margin-right: 50px;
+    }
+
+    .logo {
+        margin-right: 100px;
+    }
+
+    .contact-information-item-text,
+    .language-text {
+        font-size: 14px;
+    }
+}
+
+//1440px
+@media (min-width: 1440px) {
+    .header {
+        &-container {
+            padding: 0 180px;
+        }
+
+        &-content {
+            max-width: 1410px;
+        }
+    }
+
+    .header-information-plants {
+        max-width: 863px;
+    }
+
+    .header-information-plants-nav {
+        max-width: 663px;
+    }
+
+    .logo {
+        margin-right: 150px;
+        
+        &-img {
+            width: 120px;
+            height: 55px;
+        }
+    }
+
+}
+
+// dekstop
+@media (min-width: 1920px) {
+    .header {
+        &-container {
+            padding: 0 190px;
+        }
+
+        &-information-plants {
+            max-width: 883px;
+
+            &-button-phone {
+                    width: 120px;
+                    height: 50px;
+            
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+        }
+    }
+}
+
+

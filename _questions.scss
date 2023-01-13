@@ -1,0 +1,278 @@
+.questions {
+    &-container {
+        width: 100%;
+        padding: 152px 15px 50px;
+    }
+
+    &-content {
+        margin: 0 auto;
+        
+        &,
+        &-title {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        &-title {
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: $color-primary-dark;
+
+            span {
+                display: block;
+                color: $color-accent;
+            }
+        }
+
+        &-main {
+            margin-top: 15px;
+
+            &-description {
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                color: $color-secondary-dark;
+                margin-bottom: 42px;
+            }
+
+            &-list {
+                width: 100%;
+                max-width: 360px;
+                padding: 0;
+                list-style: none;
+
+                &-item {
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+
+                    &-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 44px;
+                        padding: 0 20px;
+                        background-color: $color-button-accent;
+
+                        &::after {
+                            content: '+';
+                            margin-bottom: 4px;
+                            font-size: 28px;
+                        }
+
+                        p {
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            display: none;
+                        }
+                    }
+
+                    &-description {
+                        display: none;
+                        margin-top: 20px;
+                        padding: 0 16px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: 'Nunito', sans-serif;
+                        color: $color-secondary-dark;
+                    }
+
+                    &--active {
+                        .questions-content-main-list-item-title {
+                            background-color: $color-accent;
+
+                            &::after {
+                                content: '–';
+                            }
+
+                            &::after,
+                            p {
+                                color: $color-primary-light;
+                            }
+                        }
+
+                        .questions-content-main-list-item-description {
+                           display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-image {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .questions {
+        &-container {
+            padding: 157px 20px 50px;
+        }
+
+        &-content {
+            display: flex;
+            align-items: flex-start;
+
+            &,
+            &-title {
+                max-width: 904px;
+            }
+
+            &-title {
+                text-align: start;
+
+                span {
+                    display: initial;
+                }
+            }
+
+            &-main {
+                margin-right: 20px;
+
+                &-description {
+                    text-align: start;
+                }
+
+                &-list {
+                    max-width: 525px;
+                }
+            }
+
+            &-image {
+                display: block;
+                width: 100%;
+                max-width: 365px;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .questions {
+        &-container {
+            padding: 157px 20px 60px;
+        }
+
+        &-content {
+            &,
+            &-title {
+                max-width: 1052px;
+            }
+
+            &-title {
+                font-size: 35px;
+            }
+
+            &-main {
+                &-description {
+                    font-size: 16px;
+                }
+
+                &-list {
+                    max-width: 600px;
+            
+                    &-item-title {
+                        p {
+                            font-size: 16px;
+                        }      
+                    }                  
+                }
+            }
+
+            &-image {
+                max-width: 415px;
+            }
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .questions {
+        &-container {
+            padding: 157px 180px 100px;
+        }
+    
+        &-content {
+            &,
+            &-title {
+                max-width: 1410px;
+            }
+
+            &-main {
+                max-width: 848px;
+                margin-right: 63px;
+
+                &-list {             
+                    max-width: 848px;
+
+                    &-item {
+                        &-title {
+                            height: 59px;
+
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+
+
+                        &-description {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            &-image {
+                max-width: 466px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .questions {
+        &-container {
+            padding: 157px 190px 100px;
+        }
+
+        &-content {
+            &-title {
+                font-size: 45px;
+            }
+
+            &-main {
+                margin-top: 30px;
+
+                &-description {
+                    font-size: 18px;
+                }
+
+                &-list-item {
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+
+                    &-title {
+                        p {
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            &-image {
+                max-width: 507px;
+            }
+        }
+    }
+}

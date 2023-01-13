@@ -1,0 +1,337 @@
+.experience {
+    background-color: $color-primary-light;
+
+        &-container {
+            width: 100%;
+            padding: 0 15px 50px;
+        }
+        
+        &-content {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+
+            &-images {
+                position: relative;
+                height: 457px;
+                margin-bottom: 30px;
+
+                &-green {
+                    width: 188px;
+                }
+
+                &-main {
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                    width: 291px;
+                }
+
+                &-secondary {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 241px;
+                }
+            }
+            &-description {
+                &-title {
+                    text-align: center;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: $color-primary-dark;
+                    margin-bottom: 15px;
+
+                    span {
+                        color: $color-accent;
+                    }
+                }
+
+                &-text {
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    color: $color-secondary-dark;
+                }
+
+                &-decor {
+                    margin-bottom:40px;
+                }
+
+                &-list {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    max-width: 360px;
+                    gap: 20px;
+                    padding: 0;
+                    margin-bottom: 30px;
+                   
+                    &-item {
+                        text-align: center;
+                        width: 47%;
+                        max-width: 170px;
+                        padding: 15px;
+                        background: $color-primary-light;
+                        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                        border-radius: 5px;
+                        
+
+                        img {
+                           width: 40px;
+                           height: 40px;
+                        }
+
+                        h3 {
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $color-primary-dark;
+                        }
+                    }
+                }
+
+                &-button {
+                   display: flex;
+                   justify-content: center;
+                   
+                   button {
+                        width: 167px;
+                        height: 40px;
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border: none;
+                        border-radius: 5px;
+                        color: $color-primary-light;
+                        background-color: $color-accent;
+                    }
+                }
+            }
+        }  
+} 
+
+@media (min-width: 768px) {
+    .experience {
+        &-container {
+            padding: 0 20px 50px;
+        }
+
+        &-content {
+            max-width: 904px;
+            display: flex;
+
+            &-images {
+                flex-shrink: 0;
+                width: 345px;
+                margin-right: 15px;
+                margin-bottom: 0;
+            }
+            
+            &-description {
+                &-title {
+                    text-align: left;
+                }
+                
+                &-list, &-button {
+                    justify-content: flex-start;
+                }
+                
+                &-list{
+                    max-width: 504px;
+
+                    &-item {
+                        display: flex;
+                        align-items: center;
+                        background: $color-primary-light;
+                        box-shadow: none;
+
+                        h3 {
+                            margin-left: 10px;
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .experience {
+        &-container {
+            padding: 0 60px 60px;
+        }
+
+        &-content {
+            max-width: 1052px;
+
+            &-images {
+                height: initial;
+                width: 458px;
+
+                &-green {
+                    width: 288px;
+                }
+
+                &-main {
+                    width: 391px;
+                    top: 36px;
+                    left: 24px;
+                }
+
+                &-secondary {
+                    width: 341px;
+                }
+            }
+
+            &-description {
+                &-title {
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+
+                &-list {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .experience {
+        &-container {
+            padding: 0 180px 100px;
+        }
+
+        &-content {
+            max-width: 1410px;
+
+            &-images {
+                height: 748px;
+                width: 562px;
+
+                &-green {
+                    width: 388px;
+                }
+                
+                &-main {
+                    width: 491px;
+                }
+                
+                &-secondary {
+                    width: 441px;
+                }
+            }
+
+            &-description {
+                margin: auto 0;
+
+                &-title {
+                    font-weight: 800;
+                }
+
+                &-decor {
+                    margin-bottom: 50px;
+                }
+
+                &-text {
+                    font-size: 16px;
+                }
+
+                &-list {
+                    max-width: 780px;
+                    margin-bottom: 50px;
+                   
+                    &-item {
+                        padding-left: 20px;
+
+                        img {
+                            width: 55px;
+                            height: 55px;
+                        }
+
+                        h3 {
+                            margin-left: 15px;
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                    }
+                }
+
+                &-button {
+                    button {
+                        width: 190px;
+                        height: 50px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .experience {
+        &-container {
+            padding: 0 190px 100px;
+        }
+
+        &-content {
+            &-images {
+                width: 693px;
+                height: initial;
+                margin-right: 27px;
+
+                &-green {
+                    width: 450px;
+                }
+            
+                &-main {
+                    width: 601px;
+                }
+            
+                &-secondary {
+                    width: 456px;
+                }
+            }
+
+            &-description {
+                margin: 45px 0 50px;
+
+                &-title {
+                    font-size: 45px;
+                    margin-bottom: 30px;
+                }
+
+                &-text {
+                    line-height: 28px;
+                }
+
+                &-list {
+                    max-width: 900px;
+
+                    &-item {
+                      max-width: 330px;
+                      padding-left: 30px;
+
+                      img {
+                        width: 67px;
+                        height: 67px;
+                      }
+
+                      h3 {
+                        margin-left: 30px;
+                        font-size: 24px;
+                      }
+                    }
+                }
+            }
+
+        }
+    }
+}
+}

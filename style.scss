@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./main";
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, img, a {
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,229 @@
+.choice {
+    background-color: $color-primary;
+
+    &-container {
+        width: 100%;
+        padding: 50px 15px;
+    }
+    
+    &-content {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+        &-image {
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 360px;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        &-description {
+            text-align: center;
+
+            &-title {
+                font-family: 'Nunito', sans-serif;
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: $color-primary-light;
+            }
+
+            &-text {
+                font-family: 'Nunito', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 40px;
+                color: $color-primary-light;
+            }
+
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 30px;
+                padding: 0;
+                gap: 20px;
+                list-style: none;
+           
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    width: 47%;
+                    height: 30px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 14px;
+                    color: $color-primary-light;
+                }
+            }
+
+            &-button {
+                display: flex;
+                justify-content: center;
+        
+                button {
+                    width: 167px;
+                    height: 40px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    border: none;
+                    border-radius: 5px;
+                    color: $color-primary-light;
+                    background-color: $color-accent;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .choice {
+        &-container {
+            padding: 50px 20px;
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            max-width: 904px;
+            gap: 20px;
+
+            &-image {
+                width: 50%;
+                max-width: 450px;
+                margin-bottom: 0;
+            }
+
+            &-description {
+                text-align: left;
+                width: 50%;
+
+                &-button {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .choice {
+        &-container {
+            padding: 60px;
+        }
+
+        &-content {
+            max-width: 1052px;
+            gap: 40px;
+
+            &-image {
+                max-width: 500px;
+            }
+
+            &-description {
+                &-title {
+                   font-size: 35px;
+                }
+
+                &-list-item {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .choice {
+        // background: url('./images/choices_bg.png') no-repeat center, $color-primary;
+        background-size: contain;
+
+        &-container {
+            padding: 70px 180px;
+        }
+
+        &-content {
+            max-width: 1410px;
+            gap: 60px;
+
+            &-image {
+                max-width: 600px;
+            }
+
+            &-description {
+                &-title {
+                    margin-bottom: 20px;
+                }
+
+                &-text {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+
+                &-list {
+                    margin-bottom: 40px;
+
+                    &-item {
+                        font-size: 20px;
+                    }
+                }
+
+                &-button {
+                    button {
+                        width: 190px;
+                        height: 50px;
+                        font-size: 18px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .choice {
+        &-container {
+            padding: 100px 190px;
+        }
+
+        &-content {
+            gap: 80px;
+            
+            &-image {
+                max-width: 672px;
+            }
+
+            &-description {
+                &-title {
+                    margin-bottom: 30px;
+                    font-size: 45px;
+                }
+
+                &-text {
+                    margin-bottom: 50px;
+                }
+
+                &-list {
+                    margin-bottom: 50px;
+
+                    &-item {
+                        height: 33px;
+                        font-size: 24px;
+
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

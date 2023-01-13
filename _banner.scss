@@ -1,0 +1,389 @@
+.banner {
+    &-container {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    &-content {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    &-decor {
+        background: $color-background-banner;
+    }
+
+    &-image {
+        font-size: 0;
+
+        &-main {
+            width: 100%;
+        }
+
+        &-iditional {
+            display: none;
+        }
+    }
+
+    &-hat {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-primary-dark;
+
+        &-image {
+            margin-right: 5px;
+        }
+    }
+
+    &-title {
+        margin-top: 10px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: $color-primary-dark;
+
+        &-accent {
+            color: $color-accent;
+        }
+    }
+
+    &-text {
+        margin-top: 15px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-primary-dark;
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        &-get {
+            width: 303px;
+            height: 44px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: $color-primary-light;
+            background-color: $color-accent;
+
+        }
+
+        &-viewing {
+            margin-top: 22px;
+            display: flex;
+            align-items: center;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: $color-accent;
+
+            p {
+                margin-right: 12px;
+            }
+        }
+    }
+
+    &-information {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        margin-bottom: 10px;
+
+        &-customrs {
+
+            img,
+            p {
+                display: none;
+            }
+
+            button {
+                margin-right: 12px;
+                width: 133px;
+                height: 32px;
+                border: none;
+                border-radius: 32px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 10px;
+                font-weight: 400;
+                background: $color-button-gradient;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &-created {
+
+            img,
+            p {
+                display: none;
+            }
+
+            button {
+                width: 128px;
+                height: 32px;
+                border: none;
+                border-radius: 32px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 10px;
+                font-weight: 400;
+                background: $color-button-gradient;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        &-members {
+            display: none;
+        }
+
+    }
+}
+
+// laptop
+@media (min-width: 768px) {
+    .banner {
+        width: 100%;
+        position: relative;
+
+        &-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 51%;
+        }
+
+        &-container {
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        &-content {
+            max-width: 904px;
+
+            &-container {
+                width: 48%;
+            }
+        }
+
+        &-hat {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        &-title {
+            font-size: 35px;
+        }
+
+        &-text {
+            font-size: 16px;
+            color: $color-secondary-dark;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+
+
+            &-get {
+                width: 150px;
+                height: 40px;
+                margin-right: 20px;
+                font-size: 18px;
+            }
+
+            &-viewing {
+                margin-top: 0;
+            }
+        }
+
+        &-information {
+            justify-content: flex-start;
+            margin-bottom: 0;
+
+            &-customrs,
+            &-created,
+            &-members {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+
+                img,
+                p {
+                    display: block;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                p {
+                    padding-left: 10px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $color-primary-dark;
+                }
+
+                button {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        &-container {
+            padding: 40px 60px;
+        }
+
+        &-content {
+            max-width: 1052px;
+
+            &-container {
+                width: 47%;
+            }
+        }
+
+        &-image {
+            width: 52%;
+            max-width: 625px;
+        }
+
+        &-title {
+            max-width: 400px;
+            margin-top: 15px;
+            font-size: 39px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        &-button-viewing {
+            p {
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .banner {
+        &-container {
+            padding: 50px 180px;
+        }
+
+        &-content {
+            max-width: 1408px;
+            padding: 40px 0;
+        }
+
+        &-title {
+            font-size: 45px;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        &-button-viewing {
+            p {
+                font-size: 18px;
+            }
+
+        }
+
+        &-image {
+            max-width: 850px;
+        }
+
+        &-information-customrs,
+        &-information-created,
+        &-information-members {
+            max-width: 150px;
+
+            p {
+                font-size: 16px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .banner {
+        position: relative;
+
+        &-container {
+            padding: 50px 190px;
+        }
+
+        &-content {
+            padding: 80px 0 50px;
+
+            &-container {
+                width: 43%;
+            }
+        }
+
+        &-title,
+        &-text {
+            margin-top: 20px;
+        }
+
+        &-title {
+            max-width: 500px;
+            font-size: 58px;
+        }
+
+        &-button,
+        &-information {
+            margin-top: 50px;
+        }
+
+        &-image-iditional {
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+
+            img {
+                width: 197px;
+                height: 278px;
+            }
+        }
+
+        &-image {
+            width: 54%;
+            max-width: 1014px;
+        }
+    }
+}
